@@ -1,4 +1,3 @@
-"use client";
 import { useState, useEffect } from "react";
 import { Terminal } from "lucide-react";
 import { personalInfo } from "@/data";

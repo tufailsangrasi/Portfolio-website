@@ -48,42 +48,45 @@ export const skills: Skill[] = [
 
 // ─── Projects ─────────────────────────────────────────────────────────────────
 export interface Project {
-  title: string;
+  name: string;
   description: string;
-  tags: string[];
-  github: string;
+  githubUrl: string;
+  language?: string | null;
+  topics: string[];
+  stars?: number;
+  forks?: number;
+  updatedAt: string;
   live?: string;
   /** Placeholder — drop banner images into /public/images/ */
   image?: string;
-  period: string;
 }
 
 export const projects: Project[] = [
   {
-    title: "MedInsight",
+    name: "MedInsight",
     description:
       "An AI-powered medical insight and diagnosis-assistance platform. Ingests patient data in real time, runs deep-learning inference behind a FastAPI service, and surfaces predictive insights to clinicians through a clean dashboard.",
-    tags: ["Python", "FastAPI", "TensorFlow", "PyTorch", "PostgreSQL", "Docker"],
-    github: "https://github.com/tufailahmed/medinsight",
-    period: "Jan 2025 – Feb 2025",
+    topics: ["Python", "FastAPI", "TensorFlow", "PyTorch", "PostgreSQL", "Docker"],
+    githubUrl: "https://github.com/tufailahmed/medinsight",
+    updatedAt: "2025-02-01T00:00:00Z",
     image: "/images/project-medinsight.png",
   },
   {
-    title: "n8n-Synapse Data Pipeline",
+    name: "n8n-Synapse Data Pipeline",
     description:
       "An automated ML data pipeline orchestrated with n8n — ingests raw data, triggers preprocessing jobs, trains models on schedule, and notifies the team on Slack. Replaced a manual nightly cron workflow and cut data-prep time by 70%.",
-    tags: ["n8n", "Python", "Pandas", "FastAPI", "PostgreSQL"],
-    github: "https://github.com/tufailahmed/n8n-synapse",
-    period: "Aug 2025 – Nov 2025",
+    topics: ["n8n", "Python", "Pandas", "FastAPI", "PostgreSQL"],
+    githubUrl: "https://github.com/tufailahmed/n8n-synapse",
+    updatedAt: "2025-11-01T00:00:00Z",
     image: "/images/project-n8n.png",
   },
   {
-    title: "Helix Inference Service",
+    name: "Helix Inference Service",
     description:
       "A scalable GraphQL-based ML inference backend with Redis caching and BullMQ job queues. Handles concurrent model-serving requests with circuit-breaker fallbacks and per-tenant rate limits.",
-    tags: ["GraphQL", "FastAPI", "Redis", "BullMQ", "Docker", "PyTorch"],
-    github: "https://github.com/tufailahmed/helix-inference",
-    period: "Mar 2026 – Jun 2026",
+    topics: ["GraphQL", "FastAPI", "Redis", "BullMQ", "Docker", "PyTorch"],
+    githubUrl: "https://github.com/tufailahmed/helix-inference",
+    updatedAt: "2026-06-01T00:00:00Z",
     image: "/images/project-helix.png",
   },
 ];

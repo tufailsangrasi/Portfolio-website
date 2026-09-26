@@ -1,4 +1,3 @@
-"use client";
 import { useEffect, useRef, useState } from "react";
 import { Mail, Phone, MapPin, Send } from "lucide-react";
 import { personalInfo } from "@/data";
@@ -50,7 +49,7 @@ export default function Contact() {
 
     setStatus("loading");
 
-    const apiBase = process.env.NEXT_PUBLIC_API_URL?.replace(/\/$/, "") ?? "";
+    const apiBase = (import.meta.env.VITE_API_URL as string | undefined)?.replace(/\/$/, "") ?? "";
     const endpoint = `${apiBase}/api/contact`;
 
     try {

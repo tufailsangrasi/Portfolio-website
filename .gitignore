@@ -1,8 +1,25 @@
-.next/
-out/
+# dependencies
 node_modules/
+
+# build output
+dist/
+
+# environment
 .env
 .env.local
 .env.*.local
+
+# editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
 .DS_Store
-.commandcode/
+Thumbs.db
+
+# backend
+backend/__pycache__/
+backend/.env
+backend/venv/

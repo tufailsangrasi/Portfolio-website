@@ -1,13 +1,12 @@
-"use client";
 import { useEffect, useRef } from "react";
 import { personalInfo } from "@/data";
 
 // 5 orbiting tech badges — real brand colors
 const ORBIT_ICONS = [
-  { label: "Python",       bg: "#1a2a3a", fg: "#3776AB", char: "Py" },
-  { label: "Java",         bg: "#3a1f0a", fg: "#ED8B00", char: "Jv" },
-  { label: "Spring Boot",  bg: "#0f2a0f", fg: "#6DB33F", char: "Sp" },
-  { label: "MongoDB",      bg: "#0a2a18", fg: "#13AA52", char: "Mg" },
+  { label: "Python", bg: "#1a2a3a", fg: "#3776AB", char: "Py" },
+  { label: "Java", bg: "#3a1f0a", fg: "#ED8B00", char: "Jv" },
+  { label: "Spring Boot", bg: "#0f2a0f", fg: "#6DB33F", char: "Sp" },
+  { label: "MongoDB", bg: "#0a2a18", fg: "#13AA52", char: "Mg" },
   { label: "Scikit-learn", bg: "#3a1f0a", fg: "#F7931E", char: "Sk" },
 ];
 
@@ -22,16 +21,14 @@ export default function About() {
         ),
       { threshold: 0.1 },
     );
-    ref.current?.querySelectorAll(".reveal").forEach((el) => observer.observe(el));
+    ref.current
+      ?.querySelectorAll(".reveal")
+      .forEach((el) => observer.observe(el));
     return () => observer.disconnect();
   }, []);
 
   return (
-    <section
-      id="about"
-      ref={ref}
-      className="section-pad bg-background"
-    >
+    <section id="about" ref={ref} className="section-pad bg-background">
       <div className="container-x flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
         {/* Left: text */}
         <div className="flex-1 min-w-0 lg:max-w-[520px]">
@@ -116,11 +113,18 @@ export default function About() {
             }}
           >
             {/* TODO: replace with <img src="/images/profile.jpg" alt="Tufail Ahmed" className="w-full h-full object-cover" /> */}
-            <div className="text-center">
-              <p className="text-[2rem] font-extrabold text-foreground">TA</p>
-              <p className="text-[0.6rem] text-muted mt-1">
-                Drop your photo at /public/images/profile.jpg
-              </p>
+            <div
+              className="absolute rounded-full overflow-hidden flex items-center justify-center bg-background-alt"
+              style={{
+                inset: "40px",
+                border: "2px solid #E5E7EB",
+              }}
+            >
+              <img
+                src="/images/profile.jpg"
+                alt="Tufail Ahmed"
+                className="w-full h-full object-cover"
+              />
             </div>
           </div>
         </div>

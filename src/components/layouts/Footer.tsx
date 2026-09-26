@@ -1,4 +1,3 @@
-"use client";
 import { ArrowUp, Terminal } from "lucide-react";
 import { personalInfo } from "@/data";
 
@@ -54,7 +53,7 @@ export default function Footer() {
         {/* Bottom row */}
         <div className="flex flex-col md:flex-row items-center justify-between gap-3 text-[0.8rem] text-white/55">
           <p>
-            Made with <span className="text-white">❤</span> using Next.js ©{" "}
+            Made with <span className="text-white">❤</span> using React ©{" "}
             {new Date().getFullYear()}
           </p>
           <p>{personalInfo.title}</p>

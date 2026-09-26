@@ -1,4 +1,3 @@
-"use client";
 import { useEffect, useRef, useState } from "react";
 import { CalendarDays } from "lucide-react";
 import { achievements } from "@/data";

@@ -1,4 +1,3 @@
-"use client";
 import { ChevronDown } from "lucide-react";
 import { personalInfo } from "@/data";
 import Icon from "@/components/ui/Icon";
