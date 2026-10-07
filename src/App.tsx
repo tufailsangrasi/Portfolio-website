@@ -12,10 +12,10 @@ export default function App() {
   return (
     <HelmetProvider>
       <Helmet>
-        <title>Tufail Ahmed | ML/DL Engineer</title>
+        <title>Tufail Ahmed | Full Stack Developer</title>
         <meta
           name="description"
-          content="Tufail Ahmed — ML/DL Engineer. Designing intelligent systems that learn, scale, and solve real-world problems."
+          content="Tufail Ahmed — Full Stack Developer. Solving real world financial challenges"
         />
       </Helmet>
 
