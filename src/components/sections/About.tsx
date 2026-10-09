@@ -31,7 +31,7 @@ export default function About() {
     <section id="about" ref={ref} className="section-pad bg-background">
       <div className="container-x flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
         {/* Left: text */}
-        <div className="flex-1 min-w-0 lg:max-w-[520px]">
+        <div className="flex-1 min-w-0">
           <h2 className="section-heading reveal">
             <span className="underline-word">About</span> me
           </h2>
@@ -55,8 +55,8 @@ export default function About() {
         <div
           className="reveal relative shrink-0"
           style={{
-            width: "min(340px, 80vw)",
-            height: "min(340px, 80vw)",
+            width: "min(420px, 80vw)",
+            height: "min(420px, 80vw)",
             transitionDelay: "0.15s",
           }}
         >
@@ -77,8 +77,8 @@ export default function About() {
             {ORBIT_ICONS.map((icon, i) => {
               const angle = (360 / ORBIT_ICONS.length) * i;
               const rad = (angle * Math.PI) / 180;
-              const radius = 155;
-              const size = 340;
+              const radius = 190;
+              const size = 420;
               const cx = size / 2 + radius * Math.sin(rad);
               const cy = size / 2 - radius * Math.cos(rad);
               return (
@@ -86,10 +86,10 @@ export default function About() {
                   key={icon.label}
                   className="orbit-ring-reverse absolute flex items-center justify-center rounded-full bg-card border font-mono font-bold"
                   style={{
-                    left: cx - 22,
-                    top: cy - 22,
-                    width: 44,
-                    height: 44,
+                    left: cx - 24,
+                    top: cy - 24,
+                    width: 48,
+                    height: 48,
                     background: icon.bg,
                     borderColor: `${icon.fg}55`,
                     color: icon.fg,
@@ -108,15 +108,14 @@ export default function About() {
           <div
             className="absolute rounded-full overflow-hidden flex items-center justify-center bg-background-alt"
             style={{
-              inset: "60px",
+              inset: "55px",
               border: "2px solid #E5E7EB",
             }}
           >
-            {/* TODO: replace with <img src="/images/profile.jpg" alt="Tufail Ahmed" className="w-full h-full object-cover" /> */}
             <div
               className="absolute rounded-full overflow-hidden flex items-center justify-center bg-background-alt"
               style={{
-                inset: "40px",
+                inset: "20px",
                 border: "2px solid #E5E7EB",
               }}
             >

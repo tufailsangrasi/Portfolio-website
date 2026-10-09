@@ -66,7 +66,16 @@ export default function Skills() {
         >
           {skills.map((skill) => (
             <div key={skill.name} className="skill-card">
-              <SkillIcon name={skill.name} color={skill.color} />
+              {skill.logo ? (
+                <img
+                  src={skill.logo}
+                  alt={`${skill.name} logo`}
+                  className="shrink-0"
+                  style={{ width: 26, height: 26, objectFit: "contain" }}
+                />
+              ) : (
+                <SkillIcon name={skill.name} color={skill.color} />
+              )}
               <span>{skill.name}</span>
             </div>
           ))}
