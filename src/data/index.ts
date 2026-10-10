@@ -105,11 +105,11 @@ export interface Achievement {
 
 export const achievements: Achievement[] = [
   {
-    title: "AI in Fintech Intern",
+    title: "Avanza Solutions Intern",
     organization: "Avanza Solutions",
     description:
       "Worked on fintech engineering and digital payment systems at Avanza Solutions, focusing on ISO messaging standards, transaction processing, and payment gateway integration for banking clients across the region.",
-    date: "Jun – Aug 2025",
+    date: "Jun – July 2026",
     bullets: [
       "Developed and tested ISO 8583 message parsers for real-time card transaction authorization, handling 5,000+ daily test transactions across multiple acquiring channels.",
       "Contributed to the migration of legacy payment message formats to ISO 20022 (MX) standard, mapping 40+ data elements from MT to MX schemas for cross-border payment flows.",
@@ -140,7 +140,7 @@ export const achievements: Achievement[] = [
     organization: "MUET, Jamshoro",
     description:
       "Pursued a Bachelor's degree in Software Engineering at Mehran University of Engineering & Technology (MUET), Jamshoro — one of Pakistan's top public engineering universities.",
-    date: "2021 – 2025",
+    date: "2022 – 2026",
     bullets: [
       "Completed coursework in data structures, algorithms, operating systems, database management, software design patterns, and artificial intelligence.",
       "Built multiple semester projects including an e-commerce platform, a hospital management system, and a machine-learning based sentiment analyzer.",
