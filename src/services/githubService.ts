@@ -10,7 +10,7 @@ interface CacheEntry {
   timestamp: number;
 }
 
-const CACHE_TTL = 5 * 60 * 1000; // 5 minutes
+const CACHE_TTL = 5 * 60 * 1000; 
 let cache: CacheEntry | null = null;
 
 function formatDate(iso: string): string {
@@ -35,7 +35,7 @@ function repoToProject(repo: GithubRepo): PortfolioProject {
 export async function fetchPortfolioRepos(
   signal?: AbortSignal,
 ): Promise<PortfolioProject[]> {
-  // Return cached data if still fresh
+  
   if (cache && Date.now() - cache.timestamp < CACHE_TTL) {
     return cache.data;
   }
@@ -55,7 +55,6 @@ export async function fetchPortfolioRepos(
   const repos: GithubRepo[] = json.items ?? [];
   const projects = repos.map(repoToProject);
 
-  // Update cache
   cache = { data: projects, timestamp: Date.now() };
 
   return projects;

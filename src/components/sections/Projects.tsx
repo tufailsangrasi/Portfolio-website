@@ -17,7 +17,6 @@ export default function Projects() {
     return () => observer.disconnect();
   }, []);
 
-  // Use GitHub repos if available, otherwise fall back to static data
   const displayProjects = repos.length > 0 ? repos : (error ? fallbackProjects : []);
 
   return (
@@ -60,7 +59,7 @@ export default function Projects() {
               >
                 Visit My GitHub Profile
               </a>
-              {/* Fallback to static projects below */}
+              {}
             </div>
           )}
 

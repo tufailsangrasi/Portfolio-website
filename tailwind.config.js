@@ -1,18 +1,19 @@
-/** @type {import('tailwindcss').Config} */
+
 export default {
+  darkMode: "class",
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx,mdx}"],
   theme: {
     extend: {
       colors: {
-        background: "#FAFAFA",
-        "background-alt": "#F7F7F8",
-        foreground: "#1F2024",
-        muted: "#6B7280",
-        border: "#E5E7EB",
-        card: "#FFFFFF",
-        accent: "#1F2024",
-        "accent-foreground": "#FFFFFF",
-        "link-accent": "#3B82F6",
+        background: "rgb(var(--clr-bg) / <alpha-value>)",
+        "background-alt": "rgb(var(--clr-bg-alt) / <alpha-value>)",
+        foreground: "rgb(var(--clr-fg) / <alpha-value>)",
+        muted: "rgb(var(--clr-muted) / <alpha-value>)",
+        border: "rgb(var(--clr-border) / <alpha-value>)",
+        card: "rgb(var(--clr-card) / <alpha-value>)",
+        accent: "rgb(var(--clr-accent) / <alpha-value>)",
+        "accent-foreground": "rgb(var(--clr-accent-fg) / <alpha-value>)",
+        "link-accent": "rgb(var(--clr-link) / <alpha-value>)",
       },
       fontFamily: {
         sans: [

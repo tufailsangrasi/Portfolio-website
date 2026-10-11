@@ -1,10 +1,6 @@
 import { useEffect, useRef } from "react";
 import { skills } from "@/data";
 
-/**
- * Inline brand-colored SVG icons (square badge style).
- * Kept self-contained — no extra icon-library dependency.
- */
 const SkillIcon = ({ name, color }: { name: string; color: string }) => {
   const initials = name
     .replace(/[^A-Za-z0-9]/g, "")

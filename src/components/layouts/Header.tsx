@@ -43,7 +43,7 @@ export default function Header() {
       }`}
     >
       <nav className="container-x h-[68px] flex items-center justify-between">
-        {/* Logo — terminal prompt + wordmark */}
+        {}
         <a
           href="#home"
           className="flex items-center gap-2 text-foreground no-underline"
@@ -54,7 +54,7 @@ export default function Header() {
           </span>
         </a>
 
-        {/* Desktop nav */}
+        {}
         <ul className="hidden md:flex items-center gap-8 list-none m-0 p-0">
           {NAV.map((link) => {
             const isActive = active === link.href.slice(1);
@@ -78,7 +78,7 @@ export default function Header() {
         <Toggle open={menuOpen} onToggle={() => setMenuOpen(!menuOpen)} />
       </nav>
 
-      {/* Mobile menu */}
+      {}
       {menuOpen && (
         <div className="md:hidden bg-background border-t border-border">
           <ul className="container-x py-4 flex flex-col gap-3 list-none">

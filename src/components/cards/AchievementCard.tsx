@@ -7,7 +7,6 @@ interface AchievementCardProps {
   onClick: () => void;
 }
 
-// Sidebar item
 export function AchievementSidebarItem({ achievement, isActive, onClick }: AchievementCardProps) {
   return (
     <div
@@ -23,7 +22,6 @@ export function AchievementSidebarItem({ achievement, isActive, onClick }: Achie
   );
 }
 
-// Detail panel
 export function AchievementDetail({ achievement }: { achievement: Achievement }) {
   return (
     <div style={{

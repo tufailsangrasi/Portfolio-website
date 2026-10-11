@@ -1,4 +1,4 @@
-// ─── Personal Info ───────────────────────────────────────────────────────────
+
 export const personalInfo = {
   name: "Tufail Ahmed",
   title: "Full Stack Developer",
@@ -9,17 +9,20 @@ export const personalInfo = {
   location: "Karachi, Pakistan",
   github: "https://github.com/tufailahmed",
   linkedin: "https://linkedin.com/in/tufailahmed",
+
   about: [
-    "I'm an ML/DL Engineer passionate about building intelligent, data-driven systems. I enjoy designing models and backend services that turn raw data into real-world impact — from research notebooks to production inference APIs.",
-    "I'm skilled across the ML lifecycle with Python, FastAPI, TensorFlow, PyTorch, Keras, and classical ML libraries like Scikit-learn, NumPy, and Pandas. I also build production backends with Java and Spring Boot, so I'm comfortable owning a model from training all the way to a deployed, observable service.",
-    "Always learning, I enjoy automating workflows with tools like n8n, and I thrive on solving challenging real-world problems through collaborative engineering and clean, reliable code.",
+    "I'm a Full Stack Developer experienced in building modern web applications with React.js on the frontend and .NET on the backend. I enjoy developing clean, scalable, and reliable solutions that solve real-world problems.",
+
+    "I'm also skilled in Python, Scikit-learn, PyTorch, and TensorFlow, with a focus on Machine Learning and Deep Learning. I enjoy exploring AI-driven solutions, developing predictive models, and turning data into practical insights.",
+
+    "I have foundational knowledge of Blockchain and hands-on experience building and deploying small smart contract projects using Solidity. I'm continuously learning and exploring technologies to build innovative, impactful solutions."
   ],
+
 };
 
-// ─── Skills ──────────────────────────────────────────────────────────────────
 export interface Skill {
   name: string;
-  /** Brand color used for the icon background/foreground fallback. */
+  
   color: string;
   logo?: string;
 }
@@ -47,7 +50,6 @@ export const skills: Skill[] = [
   { name: "Docker", color: "#2496ED", logo: "/skills/docker.svg" },
 ];
 
-// ─── Projects ─────────────────────────────────────────────────────────────────
 export interface Project {
   name: string;
   description: string;
@@ -58,7 +60,7 @@ export interface Project {
   forks?: number;
   updatedAt: string;
   live?: string;
-  /** Placeholder — drop banner images into /public/images/ */
+  
   image?: string;
 }
 
@@ -92,7 +94,6 @@ export const projects: Project[] = [
   },
 ];
 
-// ─── Achievements ─────────────────────────────────────────────────────────────
 export interface Achievement {
   title: string;
   organization: string;
@@ -108,14 +109,13 @@ export const achievements: Achievement[] = [
     title: "Avanza Solutions Intern",
     organization: "Avanza Solutions",
     description:
-      "Worked on fintech engineering and digital payment systems at Avanza Solutions, focusing on ISO messaging standards, transaction processing, and payment gateway integration for banking clients across the region.",
+      "Intern at Avanza Solutions, learning and taking a deep dive into the world of digital payments.",
     date: "Jun – July 2026",
     bullets: [
-      "Developed and tested ISO 8583 message parsers for real-time card transaction authorization, handling 5,000+ daily test transactions across multiple acquiring channels.",
-      "Contributed to the migration of legacy payment message formats to ISO 20022 (MX) standard, mapping 40+ data elements from MT to MX schemas for cross-border payment flows.",
-      "Built Python-based validation scripts to verify end-to-end message integrity across switch, gateway, and core banking simulator environments.",
-      "Collaborated with the QA and integration teams to troubleshoot settlement discrepancies and reconcile transaction logs against ISO 8583 bitmap field specifications.",
-      "Documented API contracts and message flow diagrams for internal payment orchestration services, improving onboarding time for new developers by 30%.",
+      "Studied ISO 8583 message flows, including data element parsing and on-us vs. off-us routing decisions within a payment switch.",
+      "Learned how a switch interacts with core banking systems to authorize and settle transactions.",
+      "Explored 1LINK's role as Pakistan's interbank switch for ATM and funds transfer traffic.",
+      "Examined how Raast operates as SBP's instant payment rail using ISO 20022 messaging.",
     ],
     url: "https://www.avanzasolutions.com/",
     urlLabel: "Avanza Solutions",
@@ -139,10 +139,10 @@ export const achievements: Achievement[] = [
     title: "Bachelor's in Software Engineering",
     organization: "MUET, Jamshoro",
     description:
-      "Pursued a Bachelor's degree in Software Engineering at Mehran University of Engineering & Technology (MUET), Jamshoro — one of Pakistan's top public engineering universities.",
+      "Pursued a Bachelor's degree in Software Engineering at Mehran University of Engineering & Technology Jamshoro,one of Pakistan's top public engineering universities.",
     date: "2022 – 2026",
     bullets: [
-      "Completed coursework in data structures, algorithms, operating systems, database management, software design patterns, and artificial intelligence.",
+      "Completed coursework in Object oriented programming, Data structures & Algorithms, Operating Systems, DBMS , Software Project Management, Agent Based Intelligence System , Data Science and Analytics ,Mobile Application Development, Cloud Computing.",
       "Built multiple semester projects including an e-commerce platform, a hospital management system, and a machine-learning based sentiment analyzer.",
       "Participated in university-level programming competitions and hackathons, consistently ranking among the top performers.",
       "Served as a peer mentor for junior students in introductory programming and object-oriented design courses.",
@@ -152,7 +152,7 @@ export const achievements: Achievement[] = [
     title: "Web Development Course",
     organization: "National Freelancing Training Program",
     description:
-      "Completed an intensive web development training program under Pakistan's National Freelancing Training Program (NFTP), gaining hands-on experience with modern full-stack technologies.",
+      "Completed an intensive web development training program under Pakistan's National Freelancing Training Program (NFTP), gaining hands-on experience with modern full stack technologies.",
     date: "2024",
     bullets: [
       "Mastered front-end fundamentals including HTML5, CSS3, JavaScript (ES6+), and responsive design with Bootstrap and Tailwind CSS.",

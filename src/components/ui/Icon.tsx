@@ -35,8 +35,6 @@ const icons: Partial<Record<IconName, LucideIcon>> = {
   file: FileText,
 };
 
-// lucide-react v1 dropped the brand icons (Github, Linkedin), so render
-// them as monochrome inline SVGs that inherit `currentColor`.
 function BrandSvg({
   name,
   size,
@@ -64,7 +62,7 @@ function BrandSvg({
       </svg>
     );
   }
-  // linkedin
+  
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"

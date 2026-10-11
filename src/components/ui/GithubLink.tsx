@@ -4,8 +4,6 @@ interface GithubLinkProps {
   className?: string;
 }
 
-// lucide-react v1 dropped the Github brand icon, so we render an
-// inline SVG that inherits `currentColor` and scales with the parent.
 export default function GithubLink({
   url,
   size = 22,

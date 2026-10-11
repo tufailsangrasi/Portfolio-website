@@ -28,7 +28,7 @@ export default function Achievements() {
           className="reveal flex flex-col md:flex-row gap-8 md:gap-10 items-start"
           style={{ transitionDelay: "0.1s" }}
         >
-          {/* ── Sidebar list ─────────────────────────────────────── */}
+          {}
           <div className="w-full md:w-[280px] shrink-0">
             {achievements.map((ach, i) => (
               <button
@@ -47,7 +47,7 @@ export default function Achievements() {
             ))}
           </div>
 
-          {/* ── Detail card ──────────────────────────────────────── */}
+          {}
           <div className="flex-1 min-w-0 bg-card border border-border rounded-xl p-6 md:p-8 shadow-soft">
             {active.date && (
               <div className="flex items-center gap-2 text-link-accent text-[0.85rem] mb-4">

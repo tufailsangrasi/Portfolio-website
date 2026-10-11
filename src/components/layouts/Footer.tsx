@@ -17,7 +17,7 @@ export default function Footer() {
   return (
     <footer className="bg-accent text-white">
       <div className="container-x py-12">
-        {/* Top row: logo / nav / scroll-to-top */}
+        {}
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           <a
             href="#home"
@@ -50,7 +50,7 @@ export default function Footer() {
 
         <div className="my-6 h-px bg-white/10" />
 
-        {/* Bottom row */}
+        {}
         <div className="flex flex-col md:flex-row items-center justify-between gap-3 text-[0.8rem] text-white/55">
           <p>
             Made with <span className="text-white">❤</span> using React ©{" "}

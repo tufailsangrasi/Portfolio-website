@@ -3,7 +3,6 @@ import { personalInfo } from "@/data";
 import Icon from "@/components/ui/Icon";
 import GithubLink from "@/components/ui/GithubLink";
 
-// Faint monospace code-snippet watermark — very low opacity
 const CODE_WATERMARK = `def train_model(data, epochs=10):
     model = NeuralNet(layers=[128, 64, 32])
     optimizer = Adam(lr=1e-3)
@@ -25,16 +24,16 @@ export default function Home() {
   return (
     <section
       id="home"
-      className="relative min-h-screen flex items-center justify-center text-center overflow-hidden bg-background pt-[68px]"
+      className="home-bg relative min-h-screen flex items-center justify-center text-center overflow-hidden bg-background pt-[68px]"
     >
-      {/* Faint code-snippet watermark, right side */}
+      {}
       <pre
         aria-hidden
         className="hero-watermark hidden md:block md:right-[-2rem] md:top-[68px] md:bottom-0 md:w-[55%] lg:w-[45%]"
       >
         {CODE_WATERMARK}
       </pre>
-      {/* Mobile: very faint horizontal stripes only */}
+      {}
       <div className="hero-watermark md:hidden" />
 
       <div className="relative z-10 container-x py-16 max-w-3xl">
@@ -50,7 +49,7 @@ export default function Home() {
           {personalInfo.subtitle}
         </p>
 
-        {/* CTAs */}
+        {}
         <div className="flex flex-wrap items-center justify-center gap-3 mb-10">
           <a href="#contact" className="btn-primary">
             Get in Touch
@@ -66,13 +65,13 @@ export default function Home() {
           </a>
         </div>
 
-        {/* Social icons */}
+        {}
         <div className="flex items-center justify-center gap-5 mb-10">
           <GithubLink url={personalInfo.github} size={26} />
           <Icon name="linkedin" url={personalInfo.linkedin} size={26} />
         </div>
 
-        {/* Scroll chevron */}
+        {}
         <a
           href="#about"
           aria-label="Scroll to about"

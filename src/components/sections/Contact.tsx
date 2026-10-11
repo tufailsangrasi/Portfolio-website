@@ -74,7 +74,7 @@ export default function Contact() {
         const data = await res.json();
         if (data?.detail) message = Array.isArray(data.detail) ? data.detail[0]?.msg ?? message : data.detail;
       } catch {
-        // response wasn't JSON — keep the generic message
+        
       }
       setErrorMsg(message);
       setStatus("error");
@@ -92,7 +92,7 @@ export default function Contact() {
         </h2>
 
         <div className="reveal grid gap-12 lg:grid-cols-2 lg:gap-16" style={{ transitionDelay: "0.1s" }}>
-          {/* ── Left: Contact information ─────────────────────────────── */}
+          {}
           <div>
             <h3 className="text-[1.1rem] font-bold text-foreground mb-6">
               Contact Information
@@ -165,7 +165,7 @@ export default function Contact() {
             </div>
           </div>
 
-          {/* ── Right: Send a message ────────────────────────────────── */}
+          {}
           <div>
             {status === "success" ? (
               <EmailSuccess onReset={() => setStatus("idle")} />

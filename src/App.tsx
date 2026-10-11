@@ -7,6 +7,7 @@ import Skills from "@/components/sections/Skills";
 import Projects from "@/components/sections/Projects";
 import Achievements from "@/components/sections/Achievements";
 import Contact from "@/components/sections/Contact";
+import ThemeToggle from "@/components/ui/ThemeToggle";
 
 export default function App() {
   return (
@@ -29,6 +30,7 @@ export default function App() {
         <Contact />
       </main>
       <Footer />
+      <ThemeToggle />
     </HelmetProvider>
   );
 }
